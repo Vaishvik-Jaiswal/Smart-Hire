@@ -1,0 +1,31 @@
+{
+  "name": "smarthire",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "flask-cors": "^0.0.1",
+    "formidable": "^3.5.2",
+    "framer-motion": "^11.11.17",
+    "mongoose": "^8.7.3",
+    "next": "14.2.13",
+    "next-auth": "^4.24.10",
+    "react": "^18",
+    "react-dom": "^18",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/react": "^18.3.11",
+    "daisyui": "^4.12.10",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.17"
+  }
+}

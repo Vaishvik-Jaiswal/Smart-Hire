@@ -1,0 +1,44 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 0%, #AADEEF 100%);
+}
+
+body {
+  background: var(--gradient-background);
+  min-height: 100vh;
+}
+
+/* You can also create a utility class for reuse */
+.bg-gradient {
+  background: var(--gradient-background);
+}
+
+@layer utilities {
+  .text-balance {
+    overflow-wrap: break-word; /* or word-wrap: break-word; */
+  }
+}
