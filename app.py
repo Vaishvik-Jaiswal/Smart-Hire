@@ -7,9 +7,9 @@ import re
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app,origins=["http://localhost:3000", "https://smarthire-67yh.onrender.com"])
 
-# Synonym mapping
+# Synonym mapping 
 synonyms = {
     "ml": "machine learning",
     "ai": "artificial intelligence",
@@ -159,6 +159,10 @@ def calculate_similarity_with_frequency(job_text, resume_text):
 
 @app.route('/process_resumes', methods=['POST'])
 def process_resumes_route():
+    print("Received request to /process_resumes")
+    print(f"Request headers: {request.headers}")
+    print(f"Form data keys: {list(request.form.keys())}")
+    print(f"Files received: {len(request.files.getlist('files'))}")
     files = request.files.getlist("files")
     job_skills = request.form['skills']
     job_education = request.form['education']
