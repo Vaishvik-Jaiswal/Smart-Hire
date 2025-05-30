@@ -7,7 +7,7 @@ import re
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app,origins=["http://localhost:3000", "https://smarthire-67yh.onrender.com"])
+CORS(app,origins=["https://smart-hire-iota.vercel.app", "https://smarthire-67yh.onrender.com"])
 
 # Synonym mapping 
 synonyms = {
