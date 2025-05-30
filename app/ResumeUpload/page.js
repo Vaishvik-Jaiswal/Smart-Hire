@@ -126,5 +126,3 @@ function ResumeUpload() {
 }
 
 export default ResumeUpload;
-
-add code to test to verify var
