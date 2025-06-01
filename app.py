@@ -7,7 +7,10 @@ import re
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app,origins=["http://localhost:3000","https://smart-hire-blush.vercel.app", "https://smarthire-67yh.onrender.com"])
+CORS(app, resources={r"/*": {"origins": [
+    "http://localhost:3000",
+    "https://smart-hire-blush.vercel.app"
+]}}, supports_credentials=True)
 
 # Synonym mapping 
 synonyms = {
